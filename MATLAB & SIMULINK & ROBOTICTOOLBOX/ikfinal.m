@@ -1,0 +1,11 @@
+L(1)= Link('d', 0 , 'a', 40, 'alpha', pi/2);
+L(2)= Link('d', 68 , 'a', 262, 'alpha', 0);
+L(3)= Link('d', 0 , 'a', 0, 'alpha', -pi/2); 
+L(4)= Link('d', 292 , 'a', 0, 'alpha', -pi/2);
+L(5)= Link('d', 0 , 'a', 0, 'alpha', -pi/2);
+L(6)= Link('d', 0 , 'a', 75, 'alpha', 0);
+Inmoov= SerialLink(L, 'name', 'Inmoov');
+Inmoov.teach;
+qi = [ 0 0 0 0 0 0 ];
+T0 = transl(100 , 200 , 300)*troty(pi/2);
+T1 = transl(200 , 200 , 300)*troty(pi/2);
